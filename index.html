@@ -73,9 +73,7 @@ body{
 
 /* 필터 */
 .chips{
-  display:flex;gap:8px;overflow-x:auto;margin:16px -14px 0;padding:8px 14px 6px;
-  position:sticky;top:0;z-index:5;
-  background:linear-gradient(to bottom,var(--bg) 78%,rgba(238,241,246,0));
+  display:flex;gap:8px;overflow-x:auto;margin:18px -14px 0;padding:2px 14px 6px;
   -webkit-overflow-scrolling:touch;scrollbar-width:none;
 }
 .chips::-webkit-scrollbar{display:none}
@@ -187,7 +185,6 @@ body{
         c.setAttribute('aria-pressed', c === b ? 'true' : 'false');
       });
       render();
-      window.scrollTo({ top: Math.max(0, box.offsetTop - 8), behavior: 'smooth' });
     });
   }
 
