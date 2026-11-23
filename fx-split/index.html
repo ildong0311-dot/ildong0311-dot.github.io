@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>환율 분할매매</title>
+<meta name="description" content="달러·엔·유로 분할 매수/매도 자동매매 시뮬레이터">
+<meta name="robots" content="noindex">
+<style>
+:root{
+  --bg:#eef1f6; --panel:#ffffff; --panel2:#f6f8fb; --ink:#16233a; --ink2:#44536b; --muted:#8190a5;
+  --line:#e3e8f0; --accent:#1769e0; --accent-ink:#ffffff; --buy:#e5582a; --sell:#1769e0;
+  --up:#d6342c; --down:#2a5bd7; --ok:#21a24a; --warn:#b7791f; --warn-bg:#fff6e5; --chip:#e9eef6;
+  --shadow:0 1px 2px rgba(20,35,60,.06),0 4px 14px rgba(20,35,60,.05);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0f141c; --panel:#171e29; --panel2:#1d2532; --ink:#e6ebf3; --ink2:#b4bfcf; --muted:#7f8ba0;
+  --line:#2a3443; --accent:#4b8ef0; --buy:#f07a4c; --sell:#4b8ef0; --up:#ff6b61; --down:#6d97ff;
+  --ok:#3cc46a; --warn:#e5b04a; --warn-bg:#2d2615; --chip:#243041; --shadow:none;
+}}
+:root[data-theme="dark"]{
+  --bg:#0f141c; --panel:#171e29; --panel2:#1d2532; --ink:#e6ebf3; --ink2:#b4bfcf; --muted:#7f8ba0;
+  --line:#2a3443; --accent:#4b8ef0; --buy:#f07a4c; --sell:#4b8ef0; --up:#ff6b61; --down:#6d97ff;
+  --ok:#3cc46a; --warn:#e5b04a; --warn-bg:#2d2615; --chip:#243041; --shadow:none;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR","Malgun Gothic","Segoe UI",sans-serif;font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit;color:inherit}
+.num{font-variant-numeric:tabular-nums}
+.app{display:flex;min-height:100vh}
+/* 사이드바 */
+.side{width:224px;flex:none;background:var(--panel);border-right:1px solid var(--line);padding:18px 12px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
+.brand{font-weight:800;font-size:19px;letter-spacing:-.3px;padding:4px 10px 18px;display:flex;align-items:center;gap:8px}
+.brand i{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;background:var(--accent);color:#fff;font-style:normal;font-size:15px}
+.nav a{display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:10px;color:var(--ink2);text-decoration:none;font-weight:600;margin-bottom:2px;cursor:pointer}
+.nav a:hover{background:var(--panel2)}
+.nav a.on{background:var(--chip);color:var(--accent)}
+.nav svg{width:19px;height:19px;flex:none}
+.side .foot{margin-top:auto;font-size:12px;color:var(--muted);padding:10px}
+/* 메인 */
+.main{flex:1;min-width:0;padding:18px 24px 40px}
+.top{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.top h1{font-size:20px;margin:0;flex:1;letter-spacing:-.3px}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border-radius:999px;background:var(--panel);border:1px solid var(--line);font-size:12.5px;font-weight:600;color:var(--ink2);cursor:pointer}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.dot.on{background:var(--ok);box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 25%,transparent)}
+.sec{font-size:16px;font-weight:800;margin:22px 0 10px;letter-spacing:-.2px}
+.sec:first-child{margin-top:0}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--panel);border-radius:14px;padding:16px;box-shadow:var(--shadow);border:1px solid var(--line);min-width:0}
+.card h3{margin:0 0 10px;font-size:15px;display:flex;align-items:center;gap:8px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.flag{font-size:20px;line-height:1}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px}
+.kv label{display:block;font-size:11.5px;color:var(--muted)}
+.kv b{font-size:15.5px;font-weight:700}
+.up{color:var(--up)} .down{color:var(--down)}
+.rate{display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+.rate .mid{font-size:24px;font-weight:800}
+.rate .sb{text-align:right;font-size:13px;color:var(--muted)}
+.rate .sb b{font-size:17px;color:var(--ink);margin-left:6px}
+.meta{font-size:11.5px;color:var(--muted)}
+.big{font-size:26px;font-weight:800;text-align:right;margin-top:14px}
+/* 버튼/폼 */
+.btn{border:0;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer;background:var(--chip);color:var(--ink)}
+.btn.pri{background:var(--accent);color:var(--accent-ink)}
+.btn.buy{background:var(--buy);color:#fff} .btn.sell{background:var(--sell);color:#fff}
+.btn.ok{background:var(--ok);color:#fff}
+.btn.ghost{background:transparent;border:1px solid var(--line)}
+.btn.sm{padding:6px 10px;font-size:12.5px;border-radius:8px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.field{background:var(--panel2);border-radius:10px;padding:10px 12px;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.field>span{font-weight:700;font-size:13px;min-width:92px;color:var(--ink2)}
+.field input,.field select{flex:1;min-width:0;border:0;background:transparent;text-align:right;font-weight:700;font-size:15px;outline:none}
+.field select{text-align:left}
+.field input:focus{background:var(--panel);border-radius:6px}
+.field em{font-style:normal;color:var(--muted);font-size:13px}
+.seg{display:inline-flex;background:var(--chip);border-radius:999px;padding:3px}
+.seg button{border:0;background:transparent;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700;cursor:pointer;color:var(--muted)}
+.seg button.on{background:var(--accent);color:#fff}
+.inp{border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:8px 10px;min-width:0}
+.warn{background:var(--warn-bg);color:var(--warn);border-radius:10px;padding:10px 12px;font-size:13px;font-weight:600;margin:8px 0}
+.note{font-size:12.5px;color:var(--muted)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+/* 통화 선택 카드 */
+.curpick{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.curpick button{border:1px solid var(--line);background:var(--panel2);border-radius:12px;padding:10px;text-align:left;cursor:pointer}
+.curpick button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.curpick small{display:block;opacity:.75;font-size:11px}
+.curpick b{font-size:16px}
+/* 바로환전 */
+.qbtns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.qbtn{border-radius:14px;padding:14px 10px;text-align:center;color:#fff}
+.qbtn small{display:block;font-weight:600;opacity:.9}
+.qbtn b{font-size:24px}
+/* 전략 리스트 */
+.slist{display:flex;flex-direction:column;gap:8px}
+.sitem{background:var(--panel2);border-radius:12px;padding:12px;cursor:pointer;border:2px solid transparent}
+.sitem.on{border-color:var(--accent)}
+.sitem .h{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted)}
+.sitem .m{display:flex;justify-content:space-between;align-items:center;margin:4px 0;font-weight:800;font-size:15px}
+.sitem .n{font-size:12px;font-weight:600;color:var(--ink2);display:flex;justify-content:space-between;gap:8px}
+.sitem .n span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.badges{display:flex;gap:3px}
+.bd{min-width:26px;padding:1px 6px;border-radius:5px;font-size:11px;font-weight:700;color:#fff;text-align:center}
+.bd.r{background:#e0453a}.bd.o{background:#ee8a32}.bd.g{background:#8a94a3}.bd.gr{background:#2fa84f}
+.tag{font-size:11px;font-weight:700;padding:2px 7px;border-radius:999px;background:var(--chip);color:var(--ink2)}
+.tag.run{background:color-mix(in srgb,var(--ok) 18%,transparent);color:var(--ok)}
+.tag.done{background:var(--chip);color:var(--muted)}
+/* 표 */
+.tbl{width:100%;border-collapse:collapse;font-size:13px}
+.tbl th{font-size:11.5px;color:var(--muted);font-weight:600;text-align:right;padding:8px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+.tbl th:first-child,.tbl td:first-child,.tbl .l{text-align:left}
+.tbl .nm{max-width:220px;overflow:hidden;text-overflow:ellipsis}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.empty{color:var(--muted);text-align:center;padding:30px 10px}
+/* 모달 */
+.modal{position:fixed;inset:0;background:rgba(10,16,28,.45);display:none;align-items:center;justify-content:center;padding:16px;z-index:50}
+.modal.on{display:flex}
+.modal .card{width:100%;max-width:440px}
+.swrow{display:flex;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}
+.swrow p{margin:0;flex:1;font-weight:600}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;opacity:0;transition:opacity .2s;pointer-events:none;z-index:60;max-width:calc(100% - 32px)}
+.toast.on{opacity:1}
+/* 하단 탭 (모바일) */
+.tabs{display:none}
+@media (max-width:900px){
+  .side{display:none}
+  .main{padding:14px 16px 96px}
+  .two{grid-template-columns:minmax(0,1fr)}
+  .tabs{display:flex;position:fixed;left:0;right:0;bottom:0;background:var(--panel);border-top:1px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom));z-index:40}
+  .tabs a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 0;cursor:pointer}
+  .tabs a.on{color:var(--accent)}
+  .tabs svg{width:22px;height:22px}
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .curpick{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand"><i>₩</i>환율 분할매매</div>
+    <nav class="nav" id="nav"></nav>
+    <div class="foot">시뮬레이션 모드 · 실제 주문 아님<br>데이터는 이 브라우저에만 저장됩니다</div>
+  </aside>
+  <main class="main">
+    <div class="top">
+      <h1 id="title">홈</h1>
+      <span class="pill" id="simPill" title="시세 시뮬레이션"><span class="dot" id="simDot"></span><span id="simTxt">시세</span></span>
+      <span class="pill" id="swPill"><span class="dot" id="swDot"></span>자동매매</span>
+    </div>
+    <div id="view"></div>
+  </main>
+</div>
+<nav class="tabs" id="tabs"></nav>
+
+<div class="modal" id="swModal">
+  <div class="card">
+    <h3>자동 매매 설정</h3>
+    <div id="swBody"></div>
+    <p class="note">세 가지 모두 전체 전략에 공통으로 적용됩니다. 중지해도 보유 차수는 그대로 남습니다.</p>
+    <div class="row" style="justify-content:flex-end"><button class="btn" data-close>닫기</button></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
