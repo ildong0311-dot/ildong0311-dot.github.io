@@ -2,32 +2,41 @@
   "academy": "강의하는아이들 배곧수학학원",
   "badge": "강의하는아이들 배곧수학학원 · 자체실행반",
   "title": "강의하는아이들 배곧수학학원 이번 주 마케팅 실행 성과",
-  "period_label": "2026. 11. 16(월) ~ 11. 22(일) 11:46 현재 · 공개 발행분만",
+  "period_label": "2026. 11. 16(월) ~ 11. 22(일) 최종 · 11. 24(화) 09:05 집계 · 공개 발행분만",
   "owner_line": "김일동 원장 · 경기 시흥시 배곧동",
-  "updated_at": "2026-11-22T11:46:00+09:00",
+  "updated_at": "2026-11-24T09:05:00+09:00",
   "stats": [
-    { "value": 58, "label": "전체 공개 건수" },
-    { "value": 25, "label": "블로그 편수" },
+    { "value": 70, "label": "전체 공개 건수" },
+    { "value": 29, "label": "블로그 편수" },
     { "value": 21, "label": "숏폼 편수" }
   ],
   "summary": [
-    { "label": "네이버 블로그 (4계정)", "value": "25편", "note": "" },
+    { "label": "네이버 블로그 (4계정)", "value": "29편", "note": "" },
     { "label": "유튜브 쇼츠 (@jacky7256)", "value": "7편", "note": "" },
     { "label": "틱톡 (@user188180010)", "value": "7건", "note": "" },
     { "label": "네이버 클립 (@baegot_math)", "value": "7건", "note": "" },
-    { "label": "네이버 플레이스 새소식", "value": "6건", "note": "" },
-    { "label": "학원 홈페이지 (bg.gang-a.net)", "value": "6건", "note": "" },
-    { "label": "인스타그램 (@lecturing_children)", "value": "0건", "note": "계정 복구 후" }
+    { "label": "네이버 플레이스 새소식", "value": "7건", "note": "" },
+    { "label": "학원 홈페이지 (bg.gang-a.net)", "value": "13건", "note": "" },
+    { "label": "인스타그램 (@lecturing_children)", "value": "0건", "note": "11/22 보안문자 차단" }
   ],
   "summary_note": "같은 영상을 유튜브·틱톡·클립에 각각 올린 건은 채널별로 셉니다. 모든 건은 실제 공개 발행된 글·영상 링크입니다.",
   "filters": [
-    { "key": "all", "label": "전체", "count": 58 },
-    { "key": "blog", "label": "블로그", "count": 25 },
+    { "key": "all", "label": "전체", "count": 70 },
+    { "key": "blog", "label": "블로그", "count": 29 },
     { "key": "yt", "label": "유튜브 쇼츠", "count": 7 },
     { "key": "short", "label": "틱톡·클립", "count": 14 },
-    { "key": "etc", "label": "플레이스·홈페이지", "count": 12 }
+    { "key": "etc", "label": "플레이스·홈페이지", "count": 20 }
   ],
   "items": [
+    { "date": "2026-11-22", "dow": "일", "time": "22:47", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "강의하는아이들 배곧수학학원 제대로 알기 (김일동 원장 직접 설명)", "sub": "게시판 47번 글 · 32분 학원 소개 영상", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=47" },
+    { "date": "2026-11-22", "dow": "일", "time": "22:46", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "26년 경력 원장이 직접 말하는 수학 공부의 본질", "sub": "게시판 46번 글 · 원장 교육 철학 클립 4편", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=46" },
+    { "date": "2026-11-22", "dow": "일", "time": "13:49", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧누리초 수학 | 분수 곱셈에서 약분을 건너뛴 아이, 5학년 2학기부터 벌어집니다", "sub": "게시판 45번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=45" },
+    { "date": "2026-11-22", "dow": "일", "time": "13:46", "cat": "blog", "ch": "네이버 블로그 · skid8888", "title": "고잔초 수학 | 4학년 다각형 내각의 합, 외우면 5학년에서 무너집니다", "sub": "내각의 합을 외운 아이가 서술형에서 멈추는 자리", "url": "https://blog.naver.com/gang_a__/224486981740" },
+    { "date": "2026-11-22", "dow": "일", "time": "13:41", "cat": "blog", "ch": "네이버 블로그 · hyhs94", "title": "함현중 수학 | 풀이는 맞는데 설명을 못 하는 아이, 중2 서술형에서 흔들립니다", "sub": "설명하는 습관이 서술형 점수를 가릅니다", "url": "https://blog.naver.com/gang-a-/224486977057" },
+    { "date": "2026-11-22", "dow": "일", "time": "13:37", "cat": "blog", "ch": "네이버 블로그 · hyhs93", "title": "배곧해솔중 수학 | 겉넓이와 부피를 한 공식으로 푸는 아이, 서술형에서 절반을 잃습니다", "sub": "겉넓이와 부피를 한 공식으로 푸는 아이", "url": "https://blog.naver.com/gang-a_/224486972763" },
+    { "date": "2026-11-22", "dow": "일", "time": "13:30", "cat": "blog", "ch": "네이버 블로그 · ildong94(공식)", "title": "배곧누리초 수학 | 분수 곱셈에서 약분을 건너뛴 아이, 5학년 2학기부터 벌어집니다", "sub": "약분은 곱하기 전에 하는 설계입니다", "url": "https://blog.naver.com/gang_a-/224486966363" },
+    { "date": "2026-11-22", "dow": "일", "time": "", "cat": "place", "ch": "네이버 플레이스 새소식", "title": "분수 곱셈에서 멈추는 아이, 원인은 계산이 아닙니다", "sub": "요약 + 사진 1장 + 원문 링크", "url": "https://m.place.naver.com/place/1693274368/feed" },
+    { "date": "2026-11-21", "dow": "토", "time": "13:42", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧라온초 수학 | 소수의 나눗셈에서 소수점을 못 찍는 아이, 원인은 계산이 아닙니다", "sub": "게시판 44번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=44" },
     { "date": "2026-11-21", "dow": "토", "time": "13:39", "cat": "blog", "ch": "네이버 블로그 · skid8888", "title": "인천논현중 수학 | 원기둥 겉넓이 공식을 외운 아이가 서술형에서 3점을 잃는 이유", "sub": "서술형은 공식이 아니라 순서로 채점됩니다", "url": "https://blog.naver.com/gang_a__/224485929943" },
     { "date": "2026-11-21", "dow": "토", "time": "13:34", "cat": "blog", "ch": "네이버 블로그 · hyhs94", "title": "서해초 수학 | 4학년 어림하기에서 '올림'과 '반올림'이 뒤섞이는 아이, 문장제에서 갈립니다", "sub": "어림하기는 숫자보다 방향이 먼저입니다", "url": "https://blog.naver.com/gang-a-/224485925699" },
     { "date": "2026-11-21", "dow": "토", "time": "13:31", "cat": "blog", "ch": "네이버 블로그 · hyhs93", "title": "배곧중 수학 | 원뿔 겉넓이에서 반지름과 지름을 바꿔 넣는 아이, 기말 전에 잡아야 합니다", "sub": "중1 2학기 기말, 마지막 넓이에서 새는 점수", "url": "https://blog.naver.com/gang-a_/224485922354" },
@@ -36,9 +45,8 @@
     { "date": "2026-11-21", "dow": "토", "time": "13:23", "cat": "yt", "ch": "유튜브 쇼츠 · @jacky7256", "title": "이건 숫자가 너무 커서 안 돼 | 세 자리 수 덧셈", "sub": "세 자리 수 덧셈 설명 영상", "url": "https://youtube.com/shorts/mVzw8_HdThg" },
     { "date": "2026-11-21", "dow": "토", "time": "", "cat": "clip", "ch": "네이버 클립 · @baegot_math", "title": "이건 숫자가 너무 커서 안 돼 | 세 자리 수 덧셈", "sub": "3사 동시 전체공개", "url": "https://naver.me/5UVLpBmU" },
     { "date": "2026-11-21", "dow": "토", "time": "", "cat": "place", "ch": "네이버 플레이스 새소식", "title": "소수점에서 멈추는 아이, 원인은 계산이 아닙니다", "sub": "요약 + 사진 1장 + 원문 링크", "url": "https://m.place.naver.com/place/1693274368/feed" },
-    { "date": "2026-11-21", "dow": "토", "time": "", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧라온초 수학 | 소수의 나눗셈에서 소수점을 못 찍는 아이, 원인은 계산이 아닙니다", "sub": "게시판 44번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=44" },
-
     { "date": "2026-11-20", "dow": "금", "time": "15:34", "cat": "blog", "ch": "네이버 블로그 · ildong94(공식)", "title": "배곧 수학학원 | \"패드로 수업하면 인강만 틀어주는 거 아닌가요?\" 원장이 직접 답합니다", "sub": "6단계 학습 순환 · 걱정 vs 실제 비교표", "url": "https://blog.naver.com/gang_a-/224484836615" },
+    { "date": "2026-11-20", "dow": "금", "time": "13:43", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧초 4학년 각도 | 눈금은 읽는데 각이 안 보이는 아이에게 필요한 한 가지", "sub": "게시판 43번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=43" },
     { "date": "2026-11-20", "dow": "금", "time": "13:39", "cat": "blog", "ch": "네이버 블로그 · skid8888", "title": "사리울중 수학 | 시험 전날 벼락치기로 90점 맞던 아이가 2학기에 무너지는 지점", "sub": "1학기엔 통하던 방법이 2학기에 통하지 않을 때", "url": "https://blog.naver.com/gang_a__/224484684691" },
     { "date": "2026-11-20", "dow": "금", "time": "13:35", "cat": "blog", "ch": "네이버 블로그 · hyhs94", "title": "송운초 수학 | 원의 넓이에서 3.14를 두 번 곱하는 6학년, 원인은 문장제입니다", "sub": "반지름과 지름을 바꿔 넣는 6학년", "url": "https://blog.naver.com/gang-a-/224484679045" },
     { "date": "2026-11-20", "dow": "금", "time": "13:31", "cat": "blog", "ch": "네이버 블로그 · hyhs93", "title": "배곧라라중 수학 | 서술형에서 매번 3점씩 새는 아이, 답은 아는데 말이 안 나오는 이유", "sub": "답을 몰라서가 아니라 쓰는 걸 못해서", "url": "https://blog.naver.com/gang-a_/224484674477" },
@@ -46,9 +54,8 @@
     { "date": "2026-11-20", "dow": "금", "time": "13:24", "cat": "tt", "ch": "틱톡 · @user188180010", "title": "아이가 직접 설명하며 푸는 수학 시간", "sub": "학생 설명 수업 현장", "url": "https://www.tiktok.com/@user188180010/video/7710104750527696136" },
     { "date": "2026-11-20", "dow": "금", "time": "13:23", "cat": "yt", "ch": "유튜브 쇼츠 · @jacky7256", "title": "아이가 직접 설명하며 푸는 수학 시간", "sub": "학생 설명 수업 현장", "url": "https://youtube.com/shorts/5i9I6-v59pE" },
     { "date": "2026-11-20", "dow": "금", "time": "", "cat": "clip", "ch": "네이버 클립 · @baegot_math", "title": "아이가 직접 설명하며 푸는 수학 시간", "sub": "3사 동시 전체공개", "url": "https://naver.me/5yhF5j34" },
-    { "date": "2026-11-20", "dow": "금", "time": "", "cat": "place", "ch": "네이버 플레이스 새소식", "title": "배곧초 각도 요약", "sub": "요약 + 사진 1장 + 원문 링크", "url": "https://m.place.naver.com/place/1693274368/feed" },
-    { "date": "2026-11-20", "dow": "금", "time": "", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧초 4학년 각도 | 눈금은 읽는데 각이 안 보이는 아이에게 필요한 한 가지", "sub": "게시판 43번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=43" },
-
+    { "date": "2026-11-20", "dow": "금", "time": "", "cat": "place", "ch": "네이버 플레이스 새소식", "title": "배곧초 4학년 각도, 각도기 눈금은 읽는데 각이 안 보이는 이유", "sub": "요약 + 사진 1장 + 원문 링크", "url": "https://m.place.naver.com/place/1693274368/feed" },
+    { "date": "2026-11-19", "dow": "목", "time": "13:51", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧해솔초 4학년 각도 | 각도기 눈금은 읽는데 각이 안 보이는 이유", "sub": "게시판 42번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=42" },
     { "date": "2026-11-19", "dow": "목", "time": "13:49", "cat": "blog", "ch": "네이버 블로그 · skid8888", "title": "고잔중 수학 | 중2 2학기에 수학을 놓치면 고1 선택과목까지 흔들립니다", "sub": "중2 2학기 도형에서 조용히 손을 놓는 순간", "url": "https://blog.naver.com/gang_a__/224483358363" },
     { "date": "2026-11-19", "dow": "목", "time": "13:44", "cat": "blog", "ch": "네이버 블로그 · hyhs94", "title": "함현초 수학 | 세 수의 최소공배수에서 무너지는 5학년, 두 수 공식만 외운 탓입니다", "sub": "두 수는 푸는데 세 수에서 손이 멈추는 5학년", "url": "https://blog.naver.com/gang-a-/224483351974" },
     { "date": "2026-11-19", "dow": "목", "time": "13:39", "cat": "blog", "ch": "네이버 블로그 · hyhs93", "title": "배곧해솔중 수학 | 원뿔 겉넓이에서 점수가 끊기는 이유, 공식은 아는데 답이 틀립니다", "sub": "공식은 맞게 적었는데 답만 어긋나는 이유", "url": "https://blog.naver.com/gang-a_/224483345684" },
@@ -56,9 +63,8 @@
     { "date": "2026-11-19", "dow": "목", "time": "13:27", "cat": "tt", "ch": "틱톡 · @user188180010", "title": "문제를 잘 보는 것부터 시작됩니다 | 초등 수의 크기 비교", "sub": "초등 수의 크기 비교", "url": "https://www.tiktok.com/@user188180010/video/7709734445766462738" },
     { "date": "2026-11-19", "dow": "목", "time": "13:24", "cat": "yt", "ch": "유튜브 쇼츠 · @jacky7256", "title": "문제를 잘 보는 것부터 시작됩니다 | 초등 수의 크기 비교", "sub": "초등 수의 크기 비교", "url": "https://youtube.com/shorts/mUMUwmfBpog" },
     { "date": "2026-11-19", "dow": "목", "time": "", "cat": "clip", "ch": "네이버 클립 · @baegot_math", "title": "문제를 잘 보는 것부터 시작됩니다 | 초등 수의 크기 비교", "sub": "3사 동시 전체공개", "url": "https://naver.me/5eD5QXaW" },
-    { "date": "2026-11-19", "dow": "목", "time": "", "cat": "place", "ch": "네이버 플레이스 새소식", "title": "배곧해솔초 4학년 각도", "sub": "요약 + 사진 1장 + 원문 링크", "url": "https://m.place.naver.com/place/1693274368/feed" },
-    { "date": "2026-11-19", "dow": "목", "time": "", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧해솔초 4학년 각도 | 각도기 눈금은 읽는데 각이 안 보이는 이유", "sub": "게시판 42번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=42" },
-
+    { "date": "2026-11-19", "dow": "목", "time": "", "cat": "place", "ch": "네이버 플레이스 새소식", "title": "배곧해솔초 4학년 각도, 눈금은 읽는데 각이 안 보이는 이유", "sub": "요약 + 사진 1장 + 원문 링크", "url": "https://m.place.naver.com/place/1693274368/feed" },
+    { "date": "2026-11-18", "dow": "수", "time": "13:50", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧라온초 5·6학년 넓이·시간 | 문장제에서 멈추는 아이에게 필요한 세 단계", "sub": "게시판 41번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=41" },
     { "date": "2026-11-18", "dow": "수", "time": "13:44", "cat": "blog", "ch": "네이버 블로그 · skid8888", "title": "인천논현중 수학 | 학원 세 곳을 옮겨도 제자리였던 아이가 달라진 지점", "sub": "학원을 두 곳 바꿔도 그대로였던 이유", "url": "https://blog.naver.com/gang_a__/224481928391" },
     { "date": "2026-11-18", "dow": "수", "time": "13:40", "cat": "blog", "ch": "네이버 블로그 · hyhs94", "title": "정왕동 서해초 수학 | 3·4학년 분수와 각도, 지금 생긴 구멍은 6학년에 벌어집니다", "sub": "3학년 분수 그림에서 이미 갈리는 아이", "url": "https://blog.naver.com/gang-a-/224481922221" },
     { "date": "2026-11-18", "dow": "수", "time": "13:35", "cat": "blog", "ch": "네이버 블로그 · hyhs93", "title": "배곧중 수학 | 기말 서술형에서 점수가 새는 이유, 답은 맞는데 과정이 없습니다", "sub": "'맞았는데 감점'이 쌓이는 중2 기말", "url": "https://blog.naver.com/gang-a_/224481915777" },
@@ -66,10 +72,9 @@
     { "date": "2026-11-18", "dow": "수", "time": "13:23", "cat": "tt", "ch": "틱톡 · @user188180010", "title": "우리 아이 수학, 지금 이 방향이 맞을까요? | 2026 슈퍼데이", "sub": "11/26 설명회 홍보", "url": "https://www.tiktok.com/@user188180010/video/7709362461522152722" },
     { "date": "2026-11-18", "dow": "수", "time": "13:23", "cat": "yt", "ch": "유튜브 쇼츠 · @jacky7256", "title": "우리 아이 수학, 지금 이 방향이 맞을까요? | 2026 슈퍼데이", "sub": "11/26 설명회 홍보", "url": "https://youtube.com/shorts/B5Ql-_gF3Ww" },
     { "date": "2026-11-18", "dow": "수", "time": "", "cat": "clip", "ch": "네이버 클립 · @baegot_math", "title": "우리 아이 수학, 지금 이 방향이 맞을까요? | 2026 슈퍼데이", "sub": "3사 동시 전체공개", "url": "https://naver.me/FRo5iMPy" },
-    { "date": "2026-11-18", "dow": "수", "time": "", "cat": "place", "ch": "네이버 플레이스 새소식", "title": "배곧라온초 5·6학년 넓이·시간", "sub": "요약 + 사진 1장 + 원문 링크", "url": "https://m.place.naver.com/place/1693274368/feed" },
-    { "date": "2026-11-18", "dow": "수", "time": "", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧라온초 5·6학년 넓이·시간 | 문장제에서 멈추는 아이에게 필요한 세 단계", "sub": "게시판 41번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=41" },
-
+    { "date": "2026-11-18", "dow": "수", "time": "", "cat": "place", "ch": "네이버 플레이스 새소식", "title": "배곧라온초 5·6학년 넓이·시간, 문장제에서 멈추는 이유", "sub": "요약 + 사진 1장 + 원문 링크", "url": "https://m.place.naver.com/place/1693274368/feed" },
     { "date": "2026-11-17", "dow": "화", "time": "15:47", "cat": "yt", "ch": "유튜브 쇼츠 · @jacky7256", "title": "각각 곱해주면 되는 문제 | 초등 곱셈 원리", "sub": "초등 곱셈 원리 설명 영상", "url": "https://youtube.com/shorts/0eFe5KbAGUQ" },
+    { "date": "2026-11-17", "dow": "화", "time": "14:02", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧초 소수 곱셈 | 답은 맞히는데 설명은 못 하는 아이에게 필요한 것", "sub": "게시판 40번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=40" },
     { "date": "2026-11-17", "dow": "화", "time": "13:48", "cat": "blog", "ch": "네이버 블로그 · skid8888", "title": "인천 소래초 수학 | 소래대교 건너 배곧까지 오는 이유, 분수 혼합계산의 빈틈", "sub": "계산 실수로 넘기면 같은 자리에서 또 틀립니다", "url": "https://blog.naver.com/gang_a__/224480488995" },
     { "date": "2026-11-17", "dow": "화", "time": "13:44", "cat": "tt", "ch": "틱톡 · @user188180010", "title": "각각 곱해주면 되는 문제 | 초등 곱셈 원리", "sub": "초등 곱셈 원리 설명 영상", "url": "https://www.tiktok.com/@user188180010/video/7708996605336177927" },
     { "date": "2026-11-17", "dow": "화", "time": "13:42", "cat": "blog", "ch": "네이버 블로그 · hyhs94", "title": "정왕중 수학 | 중1 도형과 입체 기말, 공식 암기 대신 설명하는 습관이 등급을 가릅니다", "sub": "원기둥 겉넓이 공식을 외운 아이가 멈추는 자리", "url": "https://blog.naver.com/gang-a-/224480480965" },
@@ -77,11 +82,14 @@
     { "date": "2026-11-17", "dow": "화", "time": "13:30", "cat": "blog", "ch": "네이버 블로그 · ildong94(공식)", "title": "배곧초 수학 | 소수 곱셈, 답은 맞히는데 설명은 못 하는 이유", "sub": "0.8 × 0.5를 0.4라 쓴 아이에게 물어야 할 것", "url": "https://blog.naver.com/gang_a-/224480464011" },
     { "date": "2026-11-17", "dow": "화", "time": "", "cat": "clip", "ch": "네이버 클립 · @baegot_math", "title": "각각 곱해주면 되는 문제 | 초등 곱셈 원리", "sub": "3사 동시 전체공개", "url": "https://naver.me/xrzwAplP" },
     { "date": "2026-11-17", "dow": "화", "time": "", "cat": "place", "ch": "네이버 플레이스 새소식", "title": "배곧초 소수 곱셈, 설명하는 습관이 답입니다", "sub": "요약 + 사진 1장 + 원문 링크", "url": "https://m.place.naver.com/place/1693274368/feed" },
-    { "date": "2026-11-17", "dow": "화", "time": "", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧초 소수 곱셈 | 답은 맞히는데 설명은 못 하는 아이에게 필요한 것", "sub": "게시판 40번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=40" },
-
+    { "date": "2026-11-16", "dow": "월", "time": "16:56", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "[설명회 안내] 우리 아이 수학, 지금 이 방향이 맞을까요? | 11/26 슈퍼데이 설명회", "sub": "게시판 39번 글 · 설명회 쇼츠 추가", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=39" },
     { "date": "2026-11-16", "dow": "월", "time": "16:46", "cat": "tt", "ch": "틱톡 · @user188180010", "title": "우리 아이 수학, 지금 이 방향이 맞을까요? | 11/26 학부모 설명회", "sub": "설명회 홍보 · 신청 링크 댓글", "url": "https://www.tiktok.com/@user188180010/video/7708672590990134535" },
     { "date": "2026-11-16", "dow": "월", "time": "16:42", "cat": "yt", "ch": "유튜브 쇼츠 · @jacky7256", "title": "우리 아이 수학, 지금 이 방향이 맞을까요? | 11/26 학부모 설명회", "sub": "설명회 홍보 · 신청 링크 댓글", "url": "https://youtube.com/shorts/OfCizO92NDs" },
+    { "date": "2026-11-16", "dow": "월", "time": "15:27", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧해솔초 5학년 분수 나눗셈 | \"왜 작아져요?\"에서 멈추는 아이에게 보여줄 것", "sub": "게시판 38번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=38" },
     { "date": "2026-11-16", "dow": "월", "time": "14:47", "cat": "blog", "ch": "네이버 블로그 · hyhs94", "title": "논현초 수학 | 단원평가 사흘 전, 문제집 한 권보다 설명 한 번이 남는 이유", "sub": "시험 사흘 전, 문제집보다 설명이 남는 이유", "url": "https://blog.naver.com/gang-a-/224479141333" },
+    { "date": "2026-11-16", "dow": "월", "time": "14:46", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "[수업 영상] 여기서 이렇게 반을 나누면 | 중등 평면도형 넓이", "sub": "게시판 37번 글 · 수업 영상", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=37" },
+    { "date": "2026-11-16", "dow": "월", "time": "14:41", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧 수학학원 수업 방식 | 플립러닝 · 백지테스트 · 하브루타 설명 수업", "sub": "게시판 35번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=35" },
+    { "date": "2026-11-16", "dow": "월", "time": "14:41", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "시흥 배곧 수학학원 강의하는아이들 | 문제를 푸는 아이에서 풀이를 설명하는 아이로", "sub": "게시판 36번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=36" },
     { "date": "2026-11-16", "dow": "월", "time": "14:17", "cat": "blog", "ch": "네이버 블로그 · hyhs93", "title": "함현중 수학 | 중2 일차함수, 공식은 아는데 그래프에서 멈추는 이유", "sub": "두 점이 주어지면 식부터 찾는 아이에게 필요한 것", "url": "https://blog.naver.com/gang-a_/224479099402" },
     { "date": "2026-11-16", "dow": "월", "time": "13:53", "cat": "blog", "ch": "네이버 블로그 · skid8888", "title": "배곧중 수학 | 도형 문제에서 보조선 하나 못 그어 10점을 잃는 이유", "sub": "중2 기말 도형, 공식은 아는데 손이 멈추는 이유", "url": "https://blog.naver.com/gang_a__/224479065742" },
     { "date": "2026-11-16", "dow": "월", "time": "13:38", "cat": "blog", "ch": "네이버 블로그 · ildong94(공식)", "title": "배곧해솔초 수학 | 분수 나눗셈에서 \"왜 작아지지?\" 아이가 멈추는 순간", "sub": "종이띠를 접어 '나누면 작아진다'를 보여주는 순서", "url": "https://blog.naver.com/gang_a-/224479046187" },
@@ -89,7 +97,6 @@
     { "date": "2026-11-16", "dow": "월", "time": "09:58", "cat": "yt", "ch": "유튜브 쇼츠 · @jacky7256", "title": "여기서 이렇게 반을 나누면 | 중등 평면도형 넓이", "sub": "중등 평면도형 넓이 20초 설명", "url": "https://youtube.com/shorts/TixR_gJLc9k" },
     { "date": "2026-11-16", "dow": "월", "time": "", "cat": "clip", "ch": "네이버 클립 · @baegot_math", "title": "여기서 이렇게 반을 나누면 | 중등 평면도형 넓이", "sub": "3사 동시 전체공개", "url": "https://naver.me/5DZ0hiiw" },
     { "date": "2026-11-16", "dow": "월", "time": "", "cat": "clip", "ch": "네이버 클립 · @baegot_math", "title": "우리 아이 수학, 지금 이 방향이 맞을까요? | 11/26 학부모 설명회", "sub": "설명회 홍보 · 3사 동시 전체공개", "url": "https://naver.me/GntDCziT" },
-    { "date": "2026-11-16", "dow": "월", "time": "", "cat": "place", "ch": "네이버 플레이스 새소식", "title": "배곧해솔초 5학년 분수 나눗셈, 접어서 보여주면 달라집니다", "sub": "요약 + 사진 1장 + 원문 링크", "url": "https://m.place.naver.com/place/1693274368/feed" },
-    { "date": "2026-11-16", "dow": "월", "time": "", "cat": "home", "ch": "학원 홈페이지 · gallery4", "title": "배곧해솔초 5학년 분수 나눗셈 | \"왜 작아져요?\"에서 멈추는 아이에게 보여줄 것", "sub": "게시판 38번 글", "url": "https://bg.gang-a.net/bbs/board.php?bo_table=gallery4&wr_id=38" }
+    { "date": "2026-11-16", "dow": "월", "time": "", "cat": "place", "ch": "네이버 플레이스 새소식", "title": "배곧해솔초 5학년 분수 나눗셈, 접어서 보여주면 달라집니다", "sub": "요약 + 사진 1장 + 원문 링크", "url": "https://m.place.naver.com/place/1693274368/feed" }
   ]
 }
