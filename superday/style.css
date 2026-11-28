@@ -52,3 +52,7 @@ header{position:sticky;top:0;z-index:10;background:rgba(250,248,243,.96);backdro
   .phones a{flex:1 1 100%;text-align:center}
   body{padding-bottom:70px}
 }
+
+/* hero headline sizing tuned for the longer LIVE headline */
+.hero h1{font-size:clamp(36px,4.2vw,62px);max-width:700px;line-height:1.1;letter-spacing:-.055em}
+@media(max-width:700px){.hero h1{font-size:clamp(26px,7.1vw,40px);max-width:72%;line-height:1.16}.hero{padding-bottom:6px}}
